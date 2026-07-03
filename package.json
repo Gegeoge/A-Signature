@@ -1,0 +1,7 @@
+{
+  "name": "a-signature",
+  "version": "1.0.0",
+  "dependencies": {
+    "stripe": "^17.5.0"
+  }
+}

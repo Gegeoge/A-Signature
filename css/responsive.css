@@ -1,0 +1,171 @@
+@media (max-width: 900px) {
+    .navbar {
+        padding: 22px 20px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero h2 {
+        font-size: 58px;
+    }
+
+    .hero-content {
+        width: 92%;
+    }
+
+    .collection-grid,
+    .promise-grid,
+    .product-grid,
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collections,
+    .featured,
+    .brand-promise,
+    .newsletter,
+    .related-products {
+        padding: 80px 24px;
+    }
+
+    .collection-banner h1,
+    .collections h2,
+    .story h2,
+    .featured h2,
+    .newsletter h2,
+    .brand-promise h2,
+    .related-products h2 {
+        font-size: 44px;
+    }
+
+    .shop-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        border-top: none;
+        border-bottom: 1px solid #D6CEC0;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+
+    .filters h3 {
+        width: 100%;
+    }
+
+    .filters a {
+        margin-bottom: 0;
+        padding: 10px 14px;
+        border: 1px solid #D6CEC0;
+    }
+
+    .product-detail {
+        grid-template-columns: 1fr;
+        padding: 90px 24px;
+    }
+
+    .main-image {
+        height: 420px;
+    }
+
+    .thumbnail-row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .thumbnail {
+        height: 80px;
+    }
+
+    .product-information {
+        padding: 32px 24px;
+    }
+
+    .product-information h1 {
+        font-size: 44px;
+    }
+
+    .product-specs {
+        grid-template-columns: 1fr;
+    }
+
+    .bag-page {
+        padding: 90px 24px;
+    }
+
+    .bag-item {
+        grid-template-columns: 100px 1fr;
+        gap: 18px;
+    }
+
+    .bag-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 46px;
+    }
+
+    .tagline {
+        letter-spacing: 3px;
+    }
+
+    .btn {
+        padding: 14px 26px;
+        font-size: 12px;
+    }
+
+    .collection-banner {
+        min-height: 52vh;
+    }
+
+    .collection-banner h1 {
+        font-size: 42px;
+    }
+
+    .featured-image,
+    .shop-image {
+        height: 300px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        width: 100%;
+    }
+}
