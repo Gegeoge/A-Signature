@@ -18,17 +18,25 @@
 
 <header class="site-header">
     <nav class="navbar">
-        <div class="logo">A.Signature</div>
+    <div class="logo">
+        <a href="index.html">A.Signature</a>
+    </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gold.html">Gold</a></li>
-            <li><a href="silver.html">Silver</a></li>
-            <li><a href="about.html">Our Story</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="bag.html">Bag (<span id="bagCount">0</span>)</a></li>
-        </ul>
-    </nav>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="gold.html">Gold</a></li>
+        <li><a href="silver.html">Silver</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="mobile-actions">
+        <a href="bag.html" class="mobile-bag">Bag (<span id="bagCount">0</span>)</a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+    </div>
+</nav>
 </header>
 
 <section class="hero">
@@ -141,6 +149,7 @@
 <script src="js/products.js"></script>
 <script src="js/cart.js"></script>
 <script src="js/home.js"></script>
+<script src="js/mobile-nav.js"></script>
 
 </body>
 </html>
