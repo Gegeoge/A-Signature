@@ -19,23 +19,45 @@ if (productGrid) {
 
     function renderProducts(productList) {
         productGrid.innerHTML = productList.map(product => {
+            const secondImage = product.hoverImage || product.image;
+
             return `
                 <div class="shop-card">
-                    <a href="product.html?id=${product.id}">
-                        <img src="${product.image}" alt="${product.name}" class="shop-image">
+                    <a href="product.html?id=${product.id}" class="product-image-link">
+                        <div class="product-image-wrap">
+                            <img
+                                src="${product.image}"
+                                alt="${product.name}"
+                                class="shop-image product-image-primary"
+                            >
+
+                            <img
+                                src="${secondImage}"
+                                alt="${product.name} worn by a model"
+                                class="shop-image product-image-hover"
+                            >
+                        </div>
                     </a>
 
                     <a href="product.html?id=${product.id}" class="product-link">
                         <h3>${product.name}</h3>
                     </a>
 
-                    <p class="product-material">${product.material ? product.material[0] : ""}</p>
+                    <p class="product-material">
+                        ${product.material ? product.material[0] : ""}
+                    </p>
 
-                    <p class="product-card-price">From $${product.price}</p>
+                    <p class="product-card-price">
+                        From $${product.price}
+                    </p>
 
-                    <button onclick="addToBag(${product.id})">Add to Bag</button>
+                    <button onclick="addToBag(${product.id})">
+                        Add to Bag
+                    </button>
 
-                    <a href="product.html?id=${product.id}" class="view-button">View Piece</a>
+                    <a href="product.html?id=${product.id}" class="view-button">
+                        View Piece
+                    </a>
                 </div>
             `;
         }).join("");
@@ -51,7 +73,10 @@ if (productGrid) {
 
             const selectedCategory = this.dataset.category;
 
-            filterLinks.forEach(item => item.classList.remove("active-filter"));
+            filterLinks.forEach(item => {
+                item.classList.remove("active-filter");
+            });
+
             this.classList.add("active-filter");
 
             if (selectedCategory === "all") {
